@@ -1,0 +1,55 @@
+# Syntax Errors
+str1 = "Python"
+
+for s in str1:
+    if(str1!=str2:
+       print(s)
+
+
+***************************************************
+Output
+
+ERROR!
+Traceback (most recent call last):
+  File "<main.py>", line 4
+    if(str1!=str2:
+                 ^
+SyntaxError: invalid syntax
+***************************************************
+
+# Logical Errors
+
+str1 = "Python"
+
+for s in str1:
+    if(str1!=str2):
+       print(s)
+
+***************************************************
+Output
+
+ERROR!
+Traceback (most recent call last):
+  File "<main.py>", line 4, in <module>
+NameError: name 'str2' is not defined
+***************************************************
+
+# Correct Program
+
+str1 = "Python"
+str2 = "Cython"
+for s in str1:
+    if(str1!=str2):
+       print(s)
+***************************************************
+Output
+
+P
+y
+t
+h
+o
+n
+***************************************************
+
+
